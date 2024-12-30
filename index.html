@@ -38,16 +38,26 @@
             font-style: italic;
             color: #7f8c8d;
         }
-        .nav-button{
-            background-color: blue;
+        nav {
+            text-align: center; 
+            margin-top: 20px;
+        }
+        .nav-button {
+            display: inline-block;
+            background-color: #3498db;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
-            border: none;
-        }
-        .navbutton: hover {
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer; 
+            transition: background-color 0.3s ease;
+            margin: 0 20px; 
+    }
+        .nav-button:hover {
             background-color: #2980b9;
-        }
+    }
+
     </style>
 </head>
 <body>
@@ -55,10 +65,10 @@
         <h1>Rutuja R Mandapmalvi</h1>
 
         <nav>
-            <a href = "#bio" class ="nav-button">About</a><br>
-            <a href = "#edu" class ="nav-button">Education</a><br>
-            <a href = "#exp" class ="nav-button">Experience</a><br>
-            <a href = "#con" class ="nav-button">Contact</a><br>
+            <a href = "#bio" class ="nav-button"><h2>About</h2></a><br>
+            <a href = "#edu" class ="nav-button"><h2>Education</h2></a><br>
+            <a href = "#exp" class ="nav-button"><h2>Experience</h2></a><br>
+            <a href = "#con" class ="nav-button"><h2>Contact</h2></a><br>
         </nav>
 
         <h1>About</h1>
