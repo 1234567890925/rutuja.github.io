@@ -25,5 +25,15 @@
         <!-- Content will be injected by bio.js -->
     </div>
     <script src="bio.js"></script>
+    <script>
+        // Create a props object
+        const props = {
+            name: 'Rutuja Mandapmalvi'
+        };
+
+        // Get the content div and inject the Bio component
+        const contentDiv = document.getElementById('content');
+        contentDiv.appendChild(Bio(props));  // Call Bio with props and append the result to the DOM
+    </script>
 </body>
 </html>
