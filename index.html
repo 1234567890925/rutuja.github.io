@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>My Education & Experience</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -15,25 +15,73 @@
             color: #2c3e50;
         }
         .container {
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #34495e;
+        }
+        .experience, .education {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience li, .education li {
+            margin-bottom: 10px;
+        }
+        .experience .title, .education .degree {
+            font-weight: bold;
+        }
+        .date {
+            font-style: italic;
+            color: #7f8c8d;
         }
     </style>
 </head>
 <body>
-    <div id="content" class="container">
-        <!-- Content will be injected by bio.js -->
-    </div>
-    <script src="bio.js"></script>
-    <script>
-        // Create a props object
-        const props = {
-            name: 'Rutuja Mandapmalvi'
-        };
+    <div class="container">
+        <h1>My Education & Experience</h1>
 
-        // Get the content div and inject the Bio component
-        const contentDiv = document.getElementById('content');
-        contentDiv.appendChild(Bio(props));  // Call Bio with props and append the result to the DOM
-    </script>
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <ul class="education">
+                <li>
+                    <span class="degree">Master's in Computer Engineering</span><br>
+                    <span class="institution">University of Washington, Seattle</span><br>
+                    <span class="date">Expected Graduation: December 2028</span>
+                </li>
+                <li>
+                    <span class="degree">Bachelor's in Computer Engineering</span><br>
+                    <span class="institution">XYZ University</span><br>
+                    <span class="date">Graduated: June 2024</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section">
+            <h2>Experience</h2>
+            <ul class="experience">
+                <li>
+                    <span class="title">Software Engineer</span> at Persistent Systems<br>
+                    <span class="date">June 2022 - March 2024</span><br>
+                    <p>Worked on internal ReactJS projects and IBM AppConnect using Node.js and Express.js, along with performing API testing using Jenkins and Postman.</p>
+                </li>
+                <li>
+                    <span class="title">Packaged App Development Analyst</span> at Accenture<br>
+                    <span class="date">May 2024 - August 2024</span><br>
+                    <p>Developed and maintained buyer-supplier application using Node.js and Express.js, wrote unit tests for CRUD operations, and provided bug support.</p>
+                </li>
+                <li>
+                    <span class="title">Intern</span> at Persistent Systems<br>
+                    <span class="date">January 2022 - June 2022</span><br>
+                    <p>Contributed to a ReactJS internal project and worked on backend services using Node.js.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
