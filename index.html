@@ -66,6 +66,17 @@
         .nav-button:hover {
             background-color: #FA86C5;
     }
+        img {
+            width: 100%; /* Makes the image take up 100% of its container width */
+            max-width: 500px; /* Ensures the image doesn’t exceed 500px */
+            height: auto; /* Maintains the image’s aspect ratio */
+            border: 5px solid #3498db; /* Adds a blue border around the image */
+            border-radius: 10px; /* Makes the corners rounded */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+            margin: 20px auto; /* Adds space around the image */
+            display: block; /* Centers the image (with margin and block display) */
+    }
+
 
     </style>
 </head>
@@ -91,7 +102,7 @@
         <div class="section" id="edu">
             <h2>Education</h2>
             <ul class="education">
-                <img src="UW_logo.png" alt"UW Logo"></img>
+                <img src="UW_logo.png" alt"UW Logo" class="img"></img>
                 <li>
                     <span class="institution">University of Washington, Seattle</span><br>
                     <span class="degree">Professional Master's in Electrical and Computer Engineering</span><br>
