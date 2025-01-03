@@ -6,33 +6,31 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-    body{
-    background-color: #C0C0C0;
-    }
-     button{
-         background-color: #708090;
-         color: white;
-         border: darkblue;
-         border-radius: 5px;
-         padding: 10px 20px;
-         font-size: 16px;        
-         cursor: pointer;
-         display: inline-block; 
-         text-align: center;
-         transition: background-color 0.3s ease, transform 0.2s ease;
-         margin-left: 20px;
-    }
-    button:hover {
-        background-color: #F5F5F5;
-        transform: scale(1.05);
-    }
+        body {
+            background-color: #C0C0C0;
+        }
+        button {
+            background-color: #708090;
+            color: white;
+            border: 1px solid darkblue;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-left: 20px;
+        }
+        button:hover {
+            background-color: #F5F5F5;
+            transform: scale(1.05);
+        }
         .box {
             width: 300px;
             height: 20px;
             border: 2px solid;
             padding: 20px;
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             align-items: center;
         }
         .experience-item {
@@ -40,35 +38,37 @@
             align-items: center;
             margin: 20px 0;
         }
-
         .logo {
             width: 60px; /* Adjust the size of the logos */
             height: auto;
             margin-right: 15px; /* Space between logo and text */
         }
-
         .text {
             flex: 1;
         }
-        .titleemail:{
+        .titleemail {
             margin-left: 20px;
         }
-</style>
+    </style>
 </head>
 
 <body>
-        <div class="section" id="con">
-            <h2>Contact</h2>
+    <div class="section" id="con">
+        <h2>Contact</h2>
+        <ul>
             <li>
-                <span class="titleemail">Email: <a href="https://outlook.office365.com/mail/">rutujm@uw.edu</a></span><br>
-                <span><a><span class="title">Mobile: (206) 861 9630</span></a></span><br>
-                <a><span class="title">LinkedIn: <a href: https://www.linkedin.com/in/rutuja-mandapmalvi/>Rutuja Mandapmalvi</a></span></a><br>
+                <span class="titleemail">Email: <a href="mailto:rutujm@uw.edu">rutujm@uw.edu</a></span>
             </li>
-        </div>
-        <div>
-        <button class="box">
-            <a href="index.html" class="button">Back to Home</a>
-        </button>
-        </div>
+            <li>
+                <span>Mobile: (206) 861 9630</span>
+            </li>
+            <li>
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/rutuja-mandapmalvi/">Rutuja Mandapmalvi</a></span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <a href="index.html" class="box button">Back to Home</a>
+    </div>
 </body>
 </html>
