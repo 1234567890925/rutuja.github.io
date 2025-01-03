@@ -25,21 +25,21 @@
         background-color: #FA86C5;
         transform: scale(1.05);
     }
-        .education-item {
+        .experience-item {
             display: flex;
             align-items: center;
             margin: 20px 0;
-    }
+        }
 
         .logo {
-            width: 60px; 
+            width: 60px; /* Adjust the size of the logos */
             height: auto;
-            margin-right: 15px;
-    }
+            margin-right: 15px; /* Space between logo and text */
+        }
 
         .text {
             flex: 1;
-    }
+        }
 </style>
 </head>
 
