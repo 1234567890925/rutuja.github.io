@@ -68,19 +68,20 @@
     }
         .education-item {
             display: flex;
-            align-items: center; /* Vertically center the logo and text */
+            align-items: center;
             margin: 20px 0;
     }
 
         .logo {
-            width: 60px; /* Adjust the size of the logo */
-            margin-right: 20px; /* Add space between the logo and the text */
+            width: 60px; 
             height: auto;
+            margin-right: 15px;
     }
 
         .text {
-            flex: 1; /* Ensures the text takes up remaining space */
+            flex: 1;
     }
+
 
 
 
@@ -105,28 +106,32 @@
         <h1>Education</h1>
 
         <!-- Education Section -->
-        <div class="education-item" id="edu">
-            <img src="UW_logo.png" alt"UW Logo" class="logo"></img>
-            <div class="edu-text">
-            <h2>Education</h2>
-            <ul class="text">
-                <li>
+<h1>Education</h1>
+
+    <div class="education-item" id="edu">
+        <ul class="education">
+        <!-- University of Washington -->
+            <li class="education-item">
+                <img src="UW_logo.png" alt="UW Logo" class="logo">
+                <div class="text">
                     <span class="institution">University of Washington, Seattle</span><br>
                     <span class="degree">Professional Master's in Electrical and Computer Engineering</span><br>
                     <span class="date">Expected Graduation: August 2026</span>
-                </li>
-                <li>
-                    <div class ="logo">
-                        <img src="sppu_logo.png" alt"UW Logo" class="uwlogo"></img>
-                    </div>
-                    <span class="institution">Pune University</span><br>
+                </div>
+            </li>
+
+        <!-- Savitribai Phule Pune University -->
+            <li class="education-item">
+                <img src="sppu_logo.png" alt="SPPU Logo" class="logo">
+                <div class="text">
+                    <span class="institution">Savitribai Phule Pune University</span><br>
                     <span class="degree">Bachelor's in Computer Engineering</span><br>
                     <span class="date">Graduated: May 2022</span>
-                </li>
-            </ul>
-            </div>
-                
-        </div>
+                </div>
+            </li>
+        </ul>
+    </div>            
+
 
         <!-- Experience Section -->
         <div class="section" id="exp">
