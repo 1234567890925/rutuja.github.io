@@ -13,29 +13,27 @@
             padding: 0;
         }
         button {
-            background-color: #BA55D3;
+            background-color: #708090;
             color: white;
-            border: darkblue;
+            border: 1px solid darkblue;
             border-radius: 5px;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            display: inline-block; 
-            text-align: center;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            margin: 20px;
-            text-decoration: none;
+            margin-left: 20px;
         }
         button:hover {
-            background-color: #7B68EE;
+            background-color: #F5F5F5;
             transform: scale(1.05);
         }
         .box {
-            width: fit-content;
+            width: 300px;
+            height: 20px;
             border: 2px solid;
-            padding: 10px;
+            padding: 20px;
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             align-items: center;
         }
         .bio-container {
@@ -68,7 +66,7 @@
 
 <body>
     <div class="bio-container">
-        <img src="pict.jpeg" alt="Rutuja's Picture">
+        <img src="pict.jpeg" alt="Picture">
         <div class="section" id="bio">
             <ul>
                 <li>Hi! I’m Rutuja Mandapmalvi, a Master's student in Electrical and Computer Engineering at the University of Washington, Seattle, expecting to graduate in August 2026.</li>
@@ -83,7 +81,7 @@
         </div>
     </div>
     <div>
-        <a href="index.html" class="box button">Back to Home</a>
+        <button href="index.html" class="button">Back to Home</button>
     </div>
 </body>
 </html>
