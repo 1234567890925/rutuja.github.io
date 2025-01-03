@@ -6,70 +6,84 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-    body{
-    background-color: #9370DB;
-    }
-     button{
-         background-color: #BA55D3;
-         color: white;
-         border: darkblue;
-         border-radius: 5px;
-         padding: 10px 20px;
-         font-size: 16px;        
-         cursor: pointer;
-         display: inline-block; 
-         text-align: center;
-         transition: background-color 0.3s ease, transform 0.2s ease;
-         margin-left: 20px;
-    }
-    button:hover {
-        background-color: #7B68EE;
-        transform: scale(1.05);
-    }
+        body {
+            background-color: #9370DB;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        button {
+            background-color: #BA55D3;
+            color: white;
+            border: darkblue;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block; 
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 20px;
+            text-decoration: none;
+        }
+        button:hover {
+            background-color: #7B68EE;
+            transform: scale(1.05);
+        }
         .box {
-            width: 300px;
-            height: 20px;
+            width: fit-content;
             border: 2px solid;
-            padding: 20px;
+            padding: 10px;
             display: flex;
             justify-content: center; 
             align-items: center;
         }
-    .section {
-        margin-bottom: 10px;
-        margin-left: 20px;
-    }
-        img {
-            width: 200px;
-            height: 250px;
-            padding: 20px;
+        .bio-container {
             display: flex;
-            justify-content: center; 
-            align-items: left;
+            align-items: flex-start;
+            margin: 20px;
         }
-</style>
+        .bio-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .bio-container .section {
+            flex: 1;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .section ul li a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <img src="pict.jpeg" class="img">
-    </div>
+    <div class="bio-container">
+        <img src="pict.jpeg" alt="Rutuja's Picture">
         <div class="section" id="bio">
             <ul>
-            <li>Hi! I’m Rutuja Mandapmalvi, a Master's student in Electrical and Computer Engineering at the University of Washington, Seattle, expecting to graduate in August 2026.</li>
-            <li>My background includes hands-on experience in software development and API maintenance.</li>
-            <li>I have worked as a Packaged App Development Analyst at Accenture, where I developed APIs and routes for a buyer-supplier web application</li>
-            <li>I have also worked as a Software Engineer at Persistent Systems, where I contributed to a ReactJS-based project and integrated web applications using Node.js and Express.js.</li> 
-            <li>My technical expertise includes programming languages like Python and JavaScript, and technologies such as AWS, React, and Jenkins.</li>
-            <li>I'm passionate about product engineering, stakeholder collaboration, and solving complex problems with innovative solutions.</li>
-            <li>In addition, I've worked on projects involving image processing and data analysis, where I applied advanced techniques to deliver impactful results.</li><br>
-            <li>For more information, please visit: <a href="https://www.linkedin.com/in/rutuja-mandapmalvi/">LinkedIn</a> profile</li><br>
+                <li>Hi! I’m Rutuja Mandapmalvi, a Master's student in Electrical and Computer Engineering at the University of Washington, Seattle, expecting to graduate in August 2026.</li>
+                <li>My background includes hands-on experience in software development and API maintenance.</li>
+                <li>I have worked as a Packaged App Development Analyst at Accenture, where I developed APIs and routes for a buyer-supplier web application.</li>
+                <li>I have also worked as a Software Engineer at Persistent Systems, where I contributed to a ReactJS-based project and integrated web applications using Node.js and Express.js.</li> 
+                <li>My technical expertise includes programming languages like Python and JavaScript, and technologies such as AWS, React, and Jenkins.</li>
+                <li>I'm passionate about product engineering, stakeholder collaboration, and solving complex problems with innovative solutions.</li>
+                <li>In addition, I've worked on projects involving image processing and data analysis, where I applied advanced techniques to deliver impactful results.</li><br>
+                <li>For more information, please visit: <a href="https://www.linkedin.com/in/rutuja-mandapmalvi/">LinkedIn</a> profile</li>
             </ul>
         </div>
-        <div>
-        <button class="box">
-            <a href="index.html" class="button">Back to Home</a>
-        </button>
-        </div>
+    </div>
+    <div>
+        <a href="index.html" class="box button">Back to Home</a>
+    </div>
 </body>
 </html>
