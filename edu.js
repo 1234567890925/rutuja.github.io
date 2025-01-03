@@ -32,10 +32,31 @@
 </head>
 
 <body>
-        <div class="section" id="bio">
-            <p>Hi! I am an Electrical and Computer Engineering graduate student at the University of Washington, Seattle</p>
-            <p>For more information, please visit: <a href="https://www.linkedin.com/in/rutuja-mandapmalvi/">my LinkedIn</a> profile</p>
-        </div>
+<h1>Education</h1>
+
+    <div class="education-item" id="edu">
+        <ul class="education">
+        <!-- University of Washington -->
+            <li class="education-item">
+                <img src="UW_logo.png" alt="UW Logo" class="logo">
+                <div class="text">
+                    <span class="institution">University of Washington, Seattle</span><br>
+                    <span class="degree">Professional Master's in Electrical and Computer Engineering</span><br>
+                    <span class="date">Expected Graduation: August 2026</span>
+                </div>
+            </li>
+
+        <!-- Savitribai Phule Pune University -->
+            <li class="education-item">
+                <img src="sppu_logo.png" alt="SPPU Logo" class="logo">
+                <div class="text">
+                    <span class="institution">Savitribai Phule Pune University</span><br>
+                    <span class="degree">Bachelor's in Computer Engineering</span><br>
+                    <span class="date">Graduated: May 2022</span>
+                </div>
+            </li>
+        </ul>
+    </div> 
 </body>
 </html>
 <a href="index.html" class="button">Back to Home</a>
