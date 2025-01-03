@@ -77,6 +77,21 @@
             display: block; 
             text-align: left;
     }
+        .education-item {
+            display: flex;
+            align-items: center; /* Vertically center the logo and text */
+            margin: 20px 0;
+    }
+
+        .logo {
+            width: 100px; /* Adjust the size of the logo */
+            margin-right: 20px; /* Add space between the logo and the text */
+    }
+
+        .text {
+            flex: 1; /* Ensures the text takes up remaining space */
+    }
+
 
 
     </style>
@@ -100,10 +115,11 @@
         <h1>Education</h1>
 
         <!-- Education Section -->
-        <div class="section" id="edu">
+        <div class="education-item" id="edu">
+            <img src="UW_logo.png" alt"UW Logo" class="logo"></img>
+            <div class="edu-text">
             <h2>Education</h2>
-            <ul class="education">
-                <img src="UW_logo.png" alt"UW Logo" class="img"></img>
+            <ul class="text">
                 <li>
                     <span class="institution">University of Washington, Seattle</span><br>
                     <span class="degree">Professional Master's in Electrical and Computer Engineering</span><br>
@@ -115,6 +131,8 @@
                     <span class="date">Graduated: May 2022</span>
                 </li>
             </ul>
+            </div>
+                
         </div>
 
         <!-- Experience Section -->
